@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page AlejoDev</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./assets/images/AlejoDev_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+
+            <a href="#" class="logo-container">
+                <img src="./assets/images/AlejoDev_logo.png" class="logo-img" alt="AlejoDev Logo">
+                <span class="logo-text">AlejoDev</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Abrir Menú">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero fade-in">
+            <h2>Bienvenido a nuestro negocio</h2>
+            <p>Ofrecemos los mejores servicios para ti</p>
+            <button type="button" class="btn">Contáctanos</button>
+        </section>
+
+        <!-- Sección "Nuestros Servicios" -->
+        <section class="services fade-in">
+            <h2>Nuestros Servicios</h2>
+            <div class="cards">
+
+                <article class="card fade-in">
+                    <div class="card-inner">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Desarrollo Web</h3>
+                        <p>Creamos sitios web modernos, rápidos y adaptables a cualquier dispositivo, enfocados en una excelente experiencia del usuario.</p>
+                        <button class="btn-card">Ver más</button>
+                    </div>
+                </article>
+
+                <article class="card fade-in">
+                    <div class="card-inner">
+                        <div class="card-icon">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                        <h3>Diseño UI/UX</h3>
+                        <p>Diseñamos interfaces atractivas y funcionales que mejoran la interacción del usuario con el producto digital.</p>
+                        <button class="btn-card">Ver más</button>
+                    </div>
+                </article>
+
+                <article class="card fade-in">
+                    <div class="card-inner">
+                        <div class="card-icon">
+                            <i class="fas fa-gauge-high"></i>
+                        </div>
+                        <h3>Optimización Web</h3>
+                        <p>Mejoramos el rendimiento y la velocidad de tu sitio para garantizar mejores resultados y posicionamiento.</p>
+                        <button class="btn-card">Ver más</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Sección "Acerca de nosotros" -->
+        <section class="about fade-in">
+            <div class="about-container">
+                <div class="about text">
+                    <h2>Acerca de nosotros</h2>
+                    <p>En AlejoDev nos especializamos en ofrecer soluciones digitales modernas
+                        enfocadas en la experiencia del usuario. Nuestro objetivo es ayudar a
+                        negocios a crecer mediante tecnología innovadora.
+                    </p>
+                    <p>Nos apasiona el desarrollo web, el diseño atractivo y la mejora continua.</p>
+                    <!-- <button class="btn">Leer más</button> -->
+                </div>
+
+                <div class="about-image">
+                    <img src="./assets/images/EquipoDeTrabajo.jpg" alt="Equipo de trabajo">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección "Contacto" -->
+        <section class="contact">
+            <h2>Contacto</h2>
+
+            <form id="contact-form" novalidate>
+
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre">
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.comm">
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" placeholder="Escribe tu mensaje"></textarea>
+                    <small class="error-message"></small>
+                </div>
+
+                <button type="submit" class="btn-card">Enviar</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 AlejoDev. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
