@@ -55,7 +55,13 @@ form.addEventListener('submit', (e) => {
     }
 
     if (isValid) {
-        alert('Formulario enviado correctamente 🚀');
+        Swal.fire({
+            title: 'Mensaje enviado 🚀',
+            text: 'Gracias por contactarnos',
+            icon: 'success',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#4A7FA7'
+        });
         form.reset(); // Reiniciar el formulario después de un envío exitoso
     }
 
@@ -82,3 +88,4 @@ form.addEventListener('submit', (e) => {
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); // Expresión regular para validar el correo electrónico
     }
 });
+
